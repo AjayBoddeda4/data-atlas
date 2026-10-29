@@ -1,0 +1,10 @@
+import React,{useState,useEffect,useCallback} from 'react';
+import {createRoot} from 'react-dom/client';
+import JobBrowser from './JobBrowser';
+import {setIndex} from './static-api';
+import {searchCatalog} from '../lib/search-catalog';
+import {sources} from '../lib/sources';
+import {localMode,workflowUrl} from './runtime';
+import './globals.css';
+function App(){const [data,setData]=useState<any>(null),[error,setError]=useState('');const load=useCallback(async()=>{try{const get=async(name:string)=>{const r=await fetch(localMode?'/api/published/'+name:new URL('data/'+name+'.json',document.baseURI),{cache:'no-store'});if(!r.ok)throw Error('Could not load published job data.');return r.json();};const meta=await get('scan');if(data?.meta?.id===meta.id)return;const [index,run,found]=await Promise.all([get('index'),get('latest-run'),get('found')]);setIndex(index);setData({bootstrap:searchCatalog(index,{location:'India',sort:'Newest posted'},sources.length,true),run,found,meta});setError('');}catch(e){setError(e instanceof Error?e.message:'Could not load data.');}},[data?.meta?.id]);useEffect(()=>{void load();const timer=setInterval(()=>void load(),60000);return()=>clearInterval(timer);},[load]);return <>{error&&<div className="portable-error" role="alert">{error} <button onClick={()=>void load()}>Retry</button></div>}{data?<><div className="portable-banner">{localMode?'Local Node.js scanner · files saved on this computer':'GitHub Pages · published results, not a live server scan'} · Last published {new Date(data.meta.generatedAt).toLocaleString()} · {data.meta.checked||0} sites checked in latest batch {!localMode&&<a href={workflowUrl} target="_blank" rel="noreferrer">Run scan in GitHub ↗</a>}</div><JobBrowser bootstrap={data.bootstrap} renderedAt={Date.now()} publishedRun={data.run} publishedFound={data.found} refreshPublished={load}/></>:<div style={{padding:50}}>Loading Data Atlas…</div>}</>}
+createRoot(document.getElementById('root')!).render(<App/>);

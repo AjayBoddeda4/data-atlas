@@ -1,0 +1,15 @@
+import {matchesPostingDate,postingTimestamp} from './posting-date.ts';
+import {hasExpired} from './job-availability.ts';
+import {locationMatches,companyMatches,roleSearchMatches} from './catalog.ts';
+import type {Job,Snapshot} from './catalog';
+export type SearchFilters={q?:string;location?:string;company?:string;provider?:string;level?:string;years?:string;includeUnknown?:boolean;remote?:boolean;sort?:string;posted?:string;savedOnly?:boolean;savedIds?:string[];page?:number};
+export const PAGE_SIZE=30;
+export function searchCatalog(records:Record<string,Snapshot>,filters:SearchFilters={},configured=0,facets=false){
+ const all=Array.from(new Map(Object.values(records).flatMap(r=>r.jobs||[]).filter(j=>!hasExpired(j.validThrough)).map(j=>[j.url,j])).values());
+ const q=(filters.q||'').trim().toLowerCase(),location=(filters.location||'').trim().toLowerCase(),saved=new Set(filters.savedIds||[]);
+ const jobs=all.filter(j=>matchesPostingDate(j,filters.posted)&&(!filters.savedOnly||saved.has(j.id))&&companyMatches(j.company,filters.company||'')&&(!filters.provider||j.provider===filters.provider)&&roleSearchMatches(j,q)&&locationMatches(j.location,location)&&(!filters.remote||j.remote||/remote|home based|anywhere/i.test(j.location))&&(filters.years===''||filters.years==null||(j.experience?.min==null?filters.includeUnknown!==false:j.experience.min<=Number(filters.years)))&&(!filters.level||filters.level==='All levels'||(filters.level==='Senior & lead'?/senior|staff|lead|principal|manager|director/i.test(j.title):filters.level==='Intern & junior'?/intern|junior|graduate|entry|associate/i.test(j.title):!/senior|staff|lead|principal|manager|director|intern|junior/i.test(j.title)))).sort((a,b)=>filters.sort==='Newest posted'?postingTimestamp(b)-postingTimestamp(a)||a.id.localeCompare(b.id):filters.sort==='Recently updated'?(Date.parse(b.updatedAt||'')||0)-(Date.parse(a.updatedAt||'')||0)||a.id.localeCompare(b.id):a.company.localeCompare(b.company)||a.id.localeCompare(b.id));
+ const page=Math.max(1,Math.min(100000,Math.floor(Number(filters.page)||1)));const pageJobs=jobs.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE);
+ const selected:Record<string,Snapshot>={};for(const job of pageJobs){const source=records[job.source];if(!selected[job.source])selected[job.source]={source:job.source,name:job.company,status:source?.status||'error',checkedAt:source?.checkedAt||null,stale:source?.stale,jobs:[]};selected[job.source].jobs.push({...job,description:''});}
+ return {records:selected,total:jobs.length,page,pageSize:PAGE_SIZE,hasMore:page*PAGE_SIZE<jobs.length,stats:{roles:all.length,employers:new Set(all.map(j=>j.company)).size,successfulFeeds:Object.values(records).filter(s=>s.status==='ok').length,configuredFeeds:configured},...(facets?{companies:[...new Set(all.map(j=>j.company))].sort()}:{} )};
+}
+export function mergePageRecords(previous:Record<string,Snapshot>,next:Record<string,Snapshot>){const merged={...previous};for(const [id,source]of Object.entries(next)){const jobs=new Map((previous[id]?.jobs||[]).map(j=>[j.id,j]));for(const j of source.jobs)jobs.set(j.id,j);merged[id]={...source,jobs:[...jobs.values()]};}return merged;}

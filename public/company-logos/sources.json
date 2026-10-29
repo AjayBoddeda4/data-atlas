@@ -1,0 +1,593 @@
+[
+  {
+    "slug": "google",
+    "names": [
+      "Google",
+      "Alphabet"
+    ],
+    "file": "google.ico",
+    "source": "https://www.google.com/favicon.ico",
+    "website": "https://www.google.com/",
+    "bytes": 5430
+  },
+  {
+    "slug": "amazon",
+    "names": [
+      "Amazon",
+      "Amazon Web Services",
+      "AWS"
+    ],
+    "file": "amazon.ico",
+    "source": "https://www.amazon.com/favicon.ico",
+    "website": "https://www.amazon.com/",
+    "bytes": 15086
+  },
+  {
+    "slug": "apple",
+    "names": [
+      "Apple"
+    ],
+    "file": "apple.ico",
+    "source": "https://www.apple.com/favicon.ico",
+    "website": "https://www.apple.com/",
+    "bytes": 22382
+  },
+  {
+    "slug": "netflix",
+    "names": [
+      "Netflix"
+    ],
+    "file": "netflix.ico",
+    "source": "https://www.netflix.com/favicon.ico",
+    "website": "https://www.netflix.com/",
+    "bytes": 16958
+  },
+  {
+    "slug": "meta",
+    "names": [
+      "Meta"
+    ],
+    "file": "meta.ico",
+    "source": "https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico",
+    "website": "https://about.meta.com/",
+    "bytes": 5558
+  },
+  {
+    "slug": "facebook",
+    "names": [
+      "Facebook"
+    ],
+    "file": "facebook.ico",
+    "source": "https://www.facebook.com/favicon.ico",
+    "website": "https://www.facebook.com/",
+    "bytes": 20366
+  },
+  {
+    "slug": "accenture",
+    "names": [
+      "Accenture"
+    ],
+    "file": "accenture.ico",
+    "source": "https://www.accenture.com/favicon.ico",
+    "website": "https://www.accenture.com/",
+    "bytes": 15406
+  },
+  {
+    "slug": "capgemini",
+    "names": [
+      "Capgemini",
+      "Cap Gemini"
+    ],
+    "source": "https://www.capgemini.com/favicon.ico",
+    "website": "https://www.capgemini.com/",
+    "bytes": 198,
+    "error": "Downloaded icon was blank; use monogram fallback."
+  },
+  {
+    "slug": "tcs",
+    "names": [
+      "TCS",
+      "Tata Consultancy Services"
+    ],
+    "file": "tcs.ico",
+    "source": "https://www.tcs.com/favicon.ico",
+    "website": "https://www.tcs.com/",
+    "bytes": 15406
+  },
+  {
+    "slug": "infosys",
+    "names": [
+      "Infosys"
+    ],
+    "file": "infosys.ico",
+    "source": "https://www.infosys.com/content/dam/infosys-web/en/global-resource/icons/favicon.ico",
+    "website": "https://www.infosys.com/",
+    "bytes": 1150
+  },
+  {
+    "slug": "wipro",
+    "names": [
+      "Wipro"
+    ],
+    "file": "wipro.png",
+    "source": "https://www.wipro.com/content/dam/nexus/en/favicon.png",
+    "website": "https://www.wipro.com/",
+    "bytes": 6015
+  },
+  {
+    "slug": "hcltech",
+    "names": [
+      "HCLTech",
+      "HCL Technologies"
+    ],
+    "file": "hcltech.ico",
+    "source": "https://www.hcltech.com/favicon.ico",
+    "website": "https://www.hcltech.com/",
+    "bytes": 15406
+  },
+  {
+    "slug": "cognizant",
+    "names": [
+      "Cognizant"
+    ],
+    "file": "cognizant.png",
+    "source": "https://www.cognizant.com/content/dam/cognizant-dot-com/favicon/default-favicon/16x16.png",
+    "website": "https://www.cognizant.com/",
+    "bytes": 624
+  },
+  {
+    "slug": "hsbc",
+    "names": [
+      "HSBC"
+    ],
+    "file": "hsbc.png",
+    "source": "https://www.hsbc.com/apple-touch-icon.png",
+    "website": "https://www.hsbc.com/",
+    "bytes": 4754
+  },
+  {
+    "slug": "jll",
+    "names": [
+      "JLL",
+      "Jones Lang LaSalle"
+    ],
+    "file": "jll.png",
+    "source": "https://www.jll.com/content/dam/tech-resources/favicon-32x32.png",
+    "website": "https://www.jll.com/",
+    "bytes": 2395
+  },
+  {
+    "slug": "t-systems",
+    "names": [
+      "T-Systems",
+      "T-Systems ICT India"
+    ],
+    "file": "t-systems.png",
+    "source": "https://www.t-systems.com/resource/crblob/285106/ba522dc5a47eb048178994efa77205c5/favicon-32x32-png-data.png",
+    "website": "https://www.t-systems.com/",
+    "bytes": 1674
+  },
+  {
+    "slug": "exl",
+    "names": [
+      "EXL",
+      "EXL (Clairvoyant)",
+      "Clairvoyant"
+    ],
+    "file": "exl.png",
+    "source": "https://www.exlservice.com/themes/exl_service/apple-touch-icon.png",
+    "website": "https://www.exlservice.com/",
+    "bytes": 8022
+  },
+  {
+    "slug": "zoho",
+    "names": [
+      "Zoho"
+    ],
+    "file": "zoho.ico",
+    "source": "https://www.zoho.com/favicon.ico",
+    "website": "https://www.zoho.com/",
+    "bytes": 15086
+  },
+  {
+    "slug": "freshworks",
+    "names": [
+      "Freshworks"
+    ],
+    "file": "freshworks.ico",
+    "source": "https://www.freshworks.com/favicon.ico",
+    "website": "https://www.freshworks.com/",
+    "bytes": 3042
+  },
+  {
+    "slug": "razorpay",
+    "names": [
+      "Razorpay"
+    ],
+    "file": "razorpay.png",
+    "source": "https://razorpay.com/favicon.ico",
+    "website": "https://razorpay.com/",
+    "bytes": 665
+  },
+  {
+    "slug": "phonepe",
+    "names": [
+      "PhonePe"
+    ],
+    "file": "phonepe.ico",
+    "source": "https://www.phonepe.com/favicon.ico",
+    "website": "https://www.phonepe.com/",
+    "bytes": 1150
+  },
+  {
+    "slug": "swiggy",
+    "names": [
+      "Swiggy"
+    ],
+    "file": "swiggy.png",
+    "source": "https://media-assets.swiggy.com/portal/m/logo_16x16.ico",
+    "website": "https://www.swiggy.com/",
+    "bytes": 366
+  },
+  {
+    "slug": "flipkart",
+    "names": [
+      "Flipkart"
+    ],
+    "file": "flipkart.png",
+    "source": "https://www.flipkart.com/favicon.ico",
+    "website": "https://www.flipkart.com/",
+    "bytes": 1528
+  },
+  {
+    "slug": "meesho",
+    "names": [
+      "Meesho"
+    ],
+    "file": "meesho.ico",
+    "source": "https://www.meesho.com/favicon.ico",
+    "website": "https://www.meesho.com/",
+    "bytes": 4286
+  },
+  {
+    "slug": "techmahindra",
+    "names": [
+      "Tech Mahindra"
+    ],
+    "file": "techmahindra.png",
+    "source": "https://www.techmahindra.com/themes/custom/techm/favicon/apple-touch-icon.png",
+    "website": "https://www.techmahindra.com/",
+    "bytes": 3307
+  },
+  {
+    "slug": "persistent",
+    "names": [
+      "Persistent Systems"
+    ],
+    "file": "persistent.ico",
+    "source": "https://www.persistent.com/wp-content/uploads/2020/09/persistent-logo-favicon-icon-1.ico",
+    "website": "https://www.persistent.com/",
+    "bytes": 1150
+  },
+  {
+    "slug": "mphasis",
+    "names": [
+      "Mphasis"
+    ],
+    "file": "mphasis.ico",
+    "source": "https://www.mphasis.com/content/dam/mphasis-com/common/icons/favicon.ico",
+    "website": "https://www.mphasis.com/",
+    "bytes": 9662
+  },
+  {
+    "slug": "genpact",
+    "names": [
+      "Genpact"
+    ],
+    "website": "https://www.genpact.com/",
+    "error": "HTTPError"
+  },
+  {
+    "slug": "brillio",
+    "names": [
+      "Brillio"
+    ],
+    "file": "brillio.webp",
+    "source": "https://www.brillio.com/wp-content/themes/brillio/assets/images/logo/brillio_fav.png",
+    "website": "https://www.brillio.com/",
+    "bytes": 770
+  },
+  {
+    "slug": "quantiphi",
+    "names": [
+      "Quantiphi"
+    ],
+    "file": "quantiphi.ico",
+    "source": "https://quantiphi.com/favicon.ico",
+    "website": "https://quantiphi.com/",
+    "bytes": 15406
+  },
+  {
+    "slug": "tigeranalytics",
+    "names": [
+      "Tiger Analytics"
+    ],
+    "file": "tigeranalytics.webp",
+    "source": "https://www.tigeranalytics.com/wp-content/uploads/2023/09/favicon-Tiger-Analytics_-150x150.png",
+    "website": "https://www.tigeranalytics.com/",
+    "bytes": 2730
+  },
+  {
+    "slug": "tredence",
+    "names": [
+      "Tredence"
+    ],
+    "file": "tredence.ico",
+    "source": "https://www.tredence.com/assets/favicon.ico",
+    "website": "https://www.tredence.com/",
+    "bytes": 15406
+  },
+  {
+    "slug": "latentview",
+    "names": [
+      "LatentView Analytics"
+    ],
+    "file": "latentview.ico",
+    "source": "https://www.latentview.com/favicon.ico",
+    "website": "https://www.latentview.com/",
+    "bytes": 1150
+  },
+  {
+    "slug": "impetus",
+    "names": [
+      "Impetus"
+    ],
+    "file": "impetus.png",
+    "source": "https://www.impetus.com/wp-content/uploads/2022/02/cropped-favicon-32x32.png",
+    "website": "https://www.impetus.com/",
+    "bytes": 493
+  },
+  {
+    "slug": "adobe",
+    "names": [
+      "Adobe"
+    ],
+    "file": "adobe.ico",
+    "source": "https://www.adobe.com/favicon.ico",
+    "website": "https://www.adobe.com/",
+    "bytes": 2228
+  },
+  {
+    "slug": "salesforce",
+    "names": [
+      "Salesforce"
+    ],
+    "file": "salesforce.ico",
+    "source": "https://www.salesforce.com/etc/designs/sfdc-www/en_us/favicon.ico?bc=OTH",
+    "website": "https://www.salesforce.com/",
+    "bytes": 5430
+  },
+  {
+    "slug": "databricks",
+    "names": [
+      "Databricks"
+    ],
+    "file": "databricks.png",
+    "source": "https://www.databricks.com/en-website-assets/favicon-32x32.png?v=c9b9916c3b27dc51866c46b79a6e9b88",
+    "website": "https://www.databricks.com/",
+    "bytes": 914
+  },
+  {
+    "slug": "snowflake",
+    "names": [
+      "Snowflake"
+    ],
+    "website": "https://www.snowflake.com/",
+    "error": "HTTPError"
+  },
+  {
+    "slug": "oracle",
+    "names": [
+      "Oracle"
+    ],
+    "website": "https://www.oracle.com/",
+    "error": "unavailable"
+  },
+  {
+    "slug": "sap",
+    "names": [
+      "SAP"
+    ],
+    "website": "https://www.sap.com/",
+    "error": "HTTPError"
+  },
+  {
+    "slug": "uber",
+    "names": [
+      "Uber"
+    ],
+    "file": "uber.ico",
+    "source": "https://www.uber.com/favicon.ico",
+    "website": "https://www.uber.com/",
+    "bytes": 9662
+  },
+  {
+    "slug": "nvidia",
+    "names": [
+      "Nvidia"
+    ],
+    "file": "nvidia.ico",
+    "source": "https://www.nvidia.com/favicon.ico",
+    "website": "https://www.nvidia.com/",
+    "bytes": 25214
+  },
+  {
+    "slug": "atlassian",
+    "names": [
+      "Atlassian"
+    ],
+    "file": "atlassian.ico",
+    "source": "https://www.atlassian.com/favicon.ico",
+    "website": "https://www.atlassian.com/",
+    "bytes": 15086
+  },
+  {
+    "slug": "mongodb",
+    "names": [
+      "MongoDB"
+    ],
+    "file": "mongodb.ico",
+    "source": "https://www.mongodb.com/favicon.ico",
+    "website": "https://www.mongodb.com/",
+    "bytes": 32988
+  },
+  {
+    "slug": "cloudflare",
+    "names": [
+      "Cloudflare"
+    ],
+    "file": "cloudflare.png",
+    "source": "https://www.cloudflare.com/favicon.ico",
+    "website": "https://www.cloudflare.com/",
+    "bytes": 908
+  },
+  {
+    "slug": "github",
+    "names": [
+      "GitHub"
+    ],
+    "file": "github.ico",
+    "source": "https://github.com/favicon.ico",
+    "website": "https://github.com/",
+    "bytes": 6518
+  },
+  {
+    "slug": "linkedin",
+    "names": [
+      "LinkedIn"
+    ],
+    "file": "linkedin.ico",
+    "source": "https://www.linkedin.com/favicon.ico",
+    "website": "https://www.linkedin.com/",
+    "bytes": 24838
+  },
+  {
+    "slug": "stripe",
+    "names": [
+      "Stripe"
+    ],
+    "file": "stripe.ico",
+    "source": "https://stripe.com/favicon.ico",
+    "website": "https://stripe.com/",
+    "bytes": 15086
+  },
+  {
+    "slug": "citi",
+    "names": [
+      "Citi",
+      "Citigroup"
+    ],
+    "file": "citi.ico",
+    "source": "https://www.citi.com/favicon.ico",
+    "website": "https://www.citi.com/",
+    "bytes": 894
+  },
+  {
+    "slug": "goldmansachs",
+    "names": [
+      "Goldman Sachs"
+    ],
+    "file": "goldmansachs.ico",
+    "source": "https://cdn.gs.com/images/goldman-sachs/v1/gs-favicon.ico",
+    "website": "https://www.goldmansachs.com/",
+    "bytes": 285478
+  },
+  {
+    "slug": "jpmorgan",
+    "names": [
+      "JPMorgan Chase",
+      "JPMorgan",
+      "JP Morgan"
+    ],
+    "file": "jpmorgan.png",
+    "source": "https://www.jpmorganchase.com/favicon.ico",
+    "website": "https://www.jpmorganchase.com/",
+    "bytes": 1549
+  },
+  {
+    "slug": "barclays",
+    "names": [
+      "Barclays"
+    ],
+    "website": "https://home.barclays/",
+    "error": "HTTPError"
+  },
+  {
+    "slug": "deutschebank",
+    "names": [
+      "Deutsche Bank"
+    ],
+    "file": "deutschebank.png",
+    "source": "https://www.db.com/favicon.ico",
+    "website": "https://www.db.com/",
+    "bytes": 672
+  },
+  {
+    "slug": "hdfc",
+    "names": [
+      "HDFC Bank"
+    ],
+    "website": "https://www.hdfc.bank.in/",
+    "error": "HTTPError"
+  },
+  {
+    "slug": "icici",
+    "names": [
+      "ICICI Bank"
+    ],
+    "file": "icici.ico",
+    "source": "https://www.icici.bank.in/favicon.ico",
+    "website": "https://www.icici.bank.in/",
+    "bytes": 9662
+  },
+  {
+    "slug": "granica",
+    "names": [
+      "granica"
+    ],
+    "file": "granica.svg",
+    "source": "https://www.granica.ai/favicon-granica.svg",
+    "website": "https://granica.ai/",
+    "bytes": 1524
+  },
+  {
+    "slug": "intuit",
+    "names": [
+      "Intuit"
+    ],
+    "file": "intuit.png",
+    "source": "https://www.intuit.com/oidam/intuit/ic/en_us/images/01-g/Intuit_FavIcon_48x48.png",
+    "website": "https://www.intuit.com/",
+    "bytes": 632
+  },
+  {
+    "slug": "servicenow",
+    "names": [
+      "ServiceNow"
+    ],
+    "file": "servicenow.ico",
+    "source": "https://www.servicenow.com/favicon.ico",
+    "website": "https://www.servicenow.com/",
+    "bytes": 9854
+  },
+  {
+    "slug": "microsoft",
+    "names": [
+      "Microsoft"
+    ],
+    "file": "microsoft.png",
+    "source": "https://support.microsoft.com/favicon-32x32.png",
+    "website": "https://www.microsoft.com/",
+    "bytes": 631
+  }
+]

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="geometricPrecision">
+  <!--
+    Granica favicon. Matches the G mark in the OG card exactly:
+    yellow square border (no fill), yellow G letter in the upper
+    portion, short yellow underline below the G. Transparent
+    centre so the mark sits cleanly against any tab chrome.
+
+    Border stroke is 1.5px on a 32-unit viewBox so it stays
+    visible at 16px render size (most browser tabs render
+    favicons between 16 and 32 px). The G letter uses system
+    sans fallbacks since web fonts cannot load in favicon
+    contexts; the letter shape varies slightly per OS, but a
+    centred bold G reads as the same identity across fallbacks.
+  -->
+
+  <!-- Yellow square outline. x/y offset by half the stroke width
+       so the stroke sits entirely within the 32x32 viewport. -->
+  <rect
+    x="0.75"
+    y="0.75"
+    width="30.5"
+    height="30.5"
+    fill="none"
+    stroke="#FFD100"
+    stroke-width="1.5"
+  />
+
+  <!-- G letter, centred horizontally, upper portion vertically -->
+  <text
+    x="16"
+    y="14"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif"
+    font-size="20"
+    font-weight="700"
+    fill="#FFD100"
+    text-anchor="middle"
+    dominant-baseline="central"
+  >G</text>
+
+  <!-- Yellow underline below the G. Width 13 (roughly the full G
+       letter width). Centred at x=16 (x=9.5, half-width 6.5). -->
+  <rect x="9.5" y="24" width="13" height="2" fill="#FFD100"/>
+</svg>

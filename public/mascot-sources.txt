@@ -1,0 +1,8 @@
+Data Atlas country mascots
+Original SVG cartoon artwork and animation by Data Atlas.
+
+Animal associations: Petopia, https://novquest.com/en/national-animals/data/ (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). Adapted to one character per listed country. National birds and traditional symbols are labeled separately from legally designated national animals. India name uses the requested Royal Bengal tiger; Germany uses a species-neutral heraldic eagle. Countries without sourced associations use an explicitly labeled original Atlas fox.
+
+Country names and aliases: https://github.com/mledoze/countries (ODbL 1.0, https://opendatacommons.org/licenses/odbl/1-0/). Derived country lookup database: lib/data/country-mascots.ts, provided under ODbL 1.0.
+
+Map outlines: Natural Earth via https://github.com/datasets/geo-countries (public domain). Simplified for small illustrations; remote territories and tiny islands may be omitted. Countries absent at this scale use a geographic locator. Outlines are decorative and do not assert territorial claims.
