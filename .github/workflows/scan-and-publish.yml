@@ -2,6 +2,11 @@ name: Scan career sites and publish Data Atlas
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'app/**'
+      - 'public/**'
+      - '*.md'
+      - '.github/workflows/deploy-ui.yml'
   workflow_dispatch:
     inputs:
       batch_size:

@@ -1,0 +1,51 @@
+name: Publish Data Atlas interface
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'public/**'
+      - '.github/workflows/deploy-ui.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: data-atlas-interface
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.18.0'
+          cache: npm
+      - run: npm ci
+      - name: Load latest persisted job snapshots
+        run: |
+          mkdir -p state
+          if git ls-remote --exit-code --heads origin atlas-data; then
+            git fetch origin atlas-data:refs/remotes/origin/atlas-data
+            git show origin/atlas-data:state.json > state/state.json
+          fi
+      - run: npm run check && npm test
+      - run: npm run publish:data
+      - uses: actions/configure-pages@v5
+        id: pages
+      - run: npm run build
+        env:
+          VITE_GITHUB_REPOSITORY: ${{ github.repository }}
+          SITE_URL: ${{ vars.SITE_URL || steps.pages.outputs.base_url }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deployment
